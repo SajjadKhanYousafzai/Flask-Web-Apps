@@ -4,7 +4,11 @@ import numpy as np
 import joblib
 
 app = Flask(__name__)
-model = joblib.load('tip_predictor_model.pkl')
+# model = joblib.load('Model and Requirement/tip_predictor_model.pkl')
+# model = joblib.load('.Model and Requirement/tip_predictor_model.pkl')
+model = joblib.load('D:/Flask Web Apps/Tips Prediction/Model and Requirement/tip_predictor_model.pkl')
+
+
 
 @app.route('/', methods=['GET', 'POST'])
 def predict():
